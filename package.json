@@ -6,14 +6,16 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js",
-    "dev": "nodemon app.js"
+    "dev": "nodemon app.js",
+    "watch:js": "parcel watch ./public/javascripts/validateForms.js --out-dir ./public/javascripts --out-file ./bundle.js",
+    "build:js": "parcel build ./public/javascripts/validateForms.js --out-dir ./public/javascripts --out-file ./bundle.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@mapbox/mapbox-sdk": "^0.11.0",
-    "cloudinary": "^1.23.0",
+    "cloudinary": "^1.41.0",
     "connect-flash": "^0.1.1",
     "connect-mongo": "^5.0.0",
     "dotenv": "^8.2.0",
