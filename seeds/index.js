@@ -4,8 +4,7 @@ const { places, descriptors } = require("./seedHelpers");
 const Campground = require("../models/campground");
 
 const dbUrl =
-	process.env.DB_URL ||
-	"mongodb+srv://Durgesh:Durgesh516348@cluster0.iefxjnx.mongodb.net/?retryWrites=true&w=majority";
+	process.env.DB_URL 
 // 	.replace(
 // 	"<password>",
 // 	process.env.MONGO_ATLAS_PASSWORD
